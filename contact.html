@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact - Travel Explorer</title>
+  <script src="script.js"></script>
+  <style>
+    nav {
+      background: #004d99;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="travelexplorer.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Contact Us</h1>
+
+  <p>Feel free to reach out to us!</p>
+
+  <ul>
+    <li>Email: <a href="mailto:agent@travelexplorer.com">agent@travelexplorer.com</a></li>
+    <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+    <li>Tourism Board: <a href="https://www.lonelyplanet.com/france/paris" target="_blank" rel="noopener">Paris
+        Tourism</a></li>
+    <li><a href="brochure.pdf" download>Download Trip Brochure (PDF)</a></li>
+  </ul>
+
+  <h2>Send us a Message</h2>
+  <form onsubmit="return validateForm()" action="mailto:agent@travelexplorer.com" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <h2>Travel Vlog</h2>
+  <video width="400" controls>
+    <source src="tokyo vlog.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</body>
+
+</html>
